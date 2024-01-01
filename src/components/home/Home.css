@@ -1,0 +1,497 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+p,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+.choco-head {
+    overflow: hidden;
+    margin-top: 60px;
+}
+
+.choco-head .choco-box {
+    background-image: url(/public/images/chocohead.png);
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choco-box h1 {
+    color: #2D2D2D;
+    text-align: center;
+    font-family: LOUIS felligri;
+    font-size: 170px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 152px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.choco-box p {
+    color: #2D2D2D;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+
+}
+
+.choco-head .buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.choco-head .buttons .btn-1 {
+    background: #000;
+    padding: 15px 25px;
+    border-radius: 30px;
+}
+
+.choco-head .buttons .btn-1 a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    font-family: Poppins;
+}
+
+.choco-head .buttons .btn-2 {
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choco-head .buttons .btn-2 .fa-arrow-right {
+    color: #2D2D2D;
+    margin-left: 4px;
+}
+
+.choco-head .buttons .btn-2 a {
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.unique-area {
+
+    margin-top: 100px;
+    background-image: url(/public//images/unique-back.png);
+    background-size: contain;
+    background-position: left;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-repeat: no-repeat;
+
+}
+
+.unique-title {
+    display: inline-block;
+    border-radius: 25px;
+    background: rgba(237, 233, 222, 0.60);
+    padding: 5px 20px;
+    margin-bottom: 20px;
+}
+
+
+.unique-title p {
+    color: #958077;
+    font-family: Poppins;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+}
+
+.unique-box-1 {
+    position: relative;
+}
+
+
+.unique-area .unique-box-1 h2 {
+    color: #2D2D2D;
+    font-family: LOUIS felligri;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.unique-area .unique-box-1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.unique-area i.fa-solid.fa-arrow-right {
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.unique-box-2 {
+    text-align: center;
+}
+
+.first-carousel {
+    margin-bottom: 100px;
+}
+
+.first-carousel .slide-img {
+    width: 100px;
+    height: 90px;
+    display: inline-block;
+    padding: 20px;
+    border: 1px solid #d3d0d0;
+    border-radius: 50px;
+}
+
+.first-carousel .slide-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.first-carousel .item {
+    text-align: center;
+}
+
+.first-carousel .item h4 {
+    margin-top: 30px;
+    font-family: LOUIS felligri;
+    color: black;
+}
+
+.first-carousel .item p {
+    margin-top: 10px;
+    color: black;
+}
+
+.first-carousel .owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: pink !important;
+    width: 15px;
+    height: 15px;
+}
+
+.first-carousel .owl-theme .owl-dots span {
+    width: 15px !important;
+    height: 15px !important;
+}
+
+.owl-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-gallery{
+    background-image: url(/public/images/product-back.png);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.gallery-title-box {
+    margin-left: 50px;
+}
+.product-heading-box {
+    text-align: center;
+}
+
+.product-heading-box h5 {
+    color: #2D2D2D;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    margin-top: 30px;
+}
+
+.product-heading-box h1 {
+    color: #2D2D2D;
+    text-align: center;
+    font-family: LOUIS felligri;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}.product-gallery .item {
+    margin: 0px 5px;
+}
+.product-gallery-img {
+    position: relative;
+}
+.product-gallery-img img{
+   border-radius: 10px;
+}
+.product-gallery-box img{
+    border-radius: 10px;
+ }.product-gallery h4 {
+    position: absolute;
+    bottom: 5px;
+    color: #fff;
+    font-size: 18px;
+    margin-left: 10px;
+    font-family: LOUIS felligri;
+}.product-gallery .gallery h2 {
+    color: #2D2D2D;
+    font-family: LOUIS felligri;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}.product-gallery .owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:active span {
+    background: pink !important;
+   
+}
+
+.product-gallery .owl-theme .owl-dots span {
+    width: 15px !important;
+    height: 15px !important;
+}
+.question-area {
+    margin-top: 100px;
+  }
+  
+  .question-area .question-box {
+    text-align: center;
+  }
+  
+  .question-area .question-box h2 {
+    color: #2D2D2D;
+    text-align: center;
+    font-family: LOUIS felligri;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  
+  
+  .accordion-box .accordion-head-1 {
+    color: #000;
+    margin-top: 30px;
+  
+  }
+  
+  .accordion-box .accordion-head-2 {
+    color: #000;
+    margin-top: 30px;
+  }
+  
+  .accordion-box .accordion-head-3 {
+    color: #000;
+    margin-top: 30px;
+  }
+  
+  .accordion-box .accordion-head-1 h4 {
+    display: inline-block;
+    color: #2D2D2D;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    /* 150% */
+  }
+  
+  .accordion-box .accordion-head-2 h4 {
+    display: inline-block;
+    color: #2D2D2D;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    /* 150% */
+  }
+  
+  .accordion-box .accordion-head-3 h4 {
+    display: inline-block;
+    color: #2D2D2D;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    /* 150% */
+  }
+  
+  .accordion-box .accordion-head-1 p {
+    color: #2D2D2D;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+  }
+  
+  .accordion-box .accordion-head-2 p {
+    color: #2D2D2D;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+  }
+  
+  .accordion-box .accordion-head-3 p {
+    color: #2D2D2D;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal; 
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+  }
+.accordion-title{
+    cursor: pointer;
+}
+.detail-area {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+.detail-area .detail-heading h1 {
+    color: #2D2D2D;
+    font-family: LOUIS felligri;
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  
+  .paragraph {
+    text-align: justify;
+  }
+  
+  .paragraph p {
+    color: #2D2D2D;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    padding-left: 130px;
+    margin-top: 30px;
+  }
+  
+  .paragraph-img {
+    width: 383px;
+    height: 511px;
+    flex-shrink: 0;
+  }
+  
+  .paragraph-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .event-area {
+    padding-top: 100px;
+    background-image: url(/public/images/footer-back.png);
+    background-position: center;
+    background-repeat: no-repeat;
+  
+  
+  }
+  
+  .event-area h1 {
+    color: #2D2D2D;
+    text-align: center;
+    font-family: LOUIS felligri;
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  
+  .event-area .buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  
+  }
+  
+  .event-area .buttons .btn-1 {
+    background: #000;
+    padding: 15px 25px;
+    border-radius: 30px;
+  }
+  
+  .event-area .buttons .btn-1 a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    font-family: Poppins;
+  }
+  
+  .event-area .buttons .btn-2 {
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .event-area .buttons .btn-2 a {
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+  }
+  
+  .event-area .buttons .btn-2 .fa-arrow-right {
+    color: #000;
+    margin-left: 4px;
+  }
+  

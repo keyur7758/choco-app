@@ -1,0 +1,59 @@
+
+.navbar-area {
+    position: sticky;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+    background: #fff;
+    box-shadow: 0px 0px 3px grey;
+  }
+  
+  .navbar-area .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2D2D2D;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 15px;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+  }
+  
+  .navbar-area i.fa-solid.fa-ice-cream {
+    margin-left: 5px;
+  }
+  
+  .navbar-nav .nav-link.active,
+  .navbar-nav .nav-link.show {
+    color: #2D2D2D;
+  
+  }
+  
+  .nav-link {
+    color: #2D2D2D;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  nav.navbar.navbar-expand-lg {
+    padding: 10px 50px;
+  }
+  
+  li.nav-item {
+    padding: 0px 10px;
+  }
+  
+ i.fa-solid.fa-store {
+    font-size: 16px;
+}
+div#navbarNav {
+    justify-content: space-around;
+}

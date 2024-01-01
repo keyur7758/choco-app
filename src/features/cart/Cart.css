@@ -1,0 +1,8 @@
+.addremove-box{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.addremove-box .quantity{
+    padding: 0px 10px;
+}

@@ -1,0 +1,34 @@
+.product-area {
+    padding: 50px;
+}
+
+.product-area .card {
+    padding: 40px;
+}
+
+.product-area .col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.product-area .product-title {
+    color: #2D2D2D;
+    font-family: LOUIS felligri;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-top: 20px;
+     
+}
+.product-area .card .txt {
+    color: #2D2D2D;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 20px;
+}
