@@ -1,6 +1,5 @@
 
 .navbar-area {
-    position: sticky;
     position: fixed;
     width: 100%;
     top: 0;
@@ -53,7 +52,21 @@
   
  i.fa-solid.fa-store {
     font-size: 16px;
+    color: #fff;
 }
-div#navbarNav {
-    justify-content: space-around;
+div#navbarScroll {
+  justify-content: space-around;
+}
+.nav-item a{
+  text-decoration: none;
+  color: black;
+}
+@media(max-width:992px){
+  .cart-button-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }  .cart-button-box .button{
+    display: block;
+  }
 }

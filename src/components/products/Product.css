@@ -3,9 +3,9 @@
 }
 
 .product-area .card {
-    padding: 40px;
+    padding: 20px;
+    min-height: 560px;
 }
-
 .product-area .col {
     display: flex;
     justify-content: center;
@@ -31,4 +31,84 @@
     font-weight: 400;
     line-height: 24px;
     margin-top: 20px;
+}
+
+@media (max-width:1200px){
+    .card-body {
+        padding: 0px !important;
+      }.product-heading-box h5 {
+        font-size: 18px;
+        line-height: 30px;
+      }.product-area .card {
+        padding: 30px;
+        min-height: 420px;
+    }.product-area .product-title {
+        font-size: 20px;
+    }.product-area .card .txt {
+        color: #2D2D2D;
+        font-size: 14px;
+        line-height: 18px;
+    }.product-heading-box h5 {
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: 0px;
+      }
+      .product-area .card {
+        padding: 10px;
+        min-height: 330px;
+      }.product-area .card .txt {
+        color: #2D2D2D;
+        font-size: 14px;
+        line-height: 18px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+      }.addtocart-btn{
+            padding: 5px 10px;
+            font-size: 14px;
+      }.product-area .product-title {
+        font-size: 18px;
+    }
+}
+@media(max-width:576px){
+    .product-area {
+        padding: 0px;
+    }.product-gallery .owl-theme .owl-dots span {
+        width: 10px !important;
+        height: 10px !important;
+    }.first-carousel .owl-theme .owl-dots span {
+        width: 10px !important;
+        height: 10px !important;
+    }.unique-area {
+        text-align: center;
+        padding-bottom: 20px;
+    }.unique-area .unique-box-1 h2 {
+        font-size: 30px;
+    }.product-heading-box h1 {
+        margin: 20px 0px;
+    }.product-heading-box h5 {
+        font-size: 12px;
+    }.question-area {
+        margin-top: 20px;
+    }.accordion-box .accordion h4 {
+        font-size: 14px;
+    }.paragraph p {
+        font-size: 12px;
+        line-height: 18px;
+        padding-left: 0px;
+        margin-top: 10px;
+    }
+}
+@media(max-width:400px){
+    .product-area .product-title {
+        font-size: 14px;
+    }.product-area .card .txt {
+        color: #2D2D2D;
+        font-size: 12px;
+        line-height: 18px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }.product-area .card {
+        padding: 10px;
+        min-height: 300px;
+    }
 }

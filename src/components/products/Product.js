@@ -13,7 +13,7 @@ export default function Product() {
         <>
             <div className='product-area'>
                 <div className='container'>
-                    <div className='row g-4 row-cols-xl-3'>
+                    <div className='row g-4 row-cols-xl-3 row-cols-md-3 row-cols-sm-2 row-cols-2'>
                         {
                             products?.map((item) => (
                                 <div className='col'>
@@ -22,8 +22,8 @@ export default function Product() {
                                         <Card.Body>
                                             <Card.Title className='product-title'>{item.title}</Card.Title>
                                             <Card.Text className='txt'>{item.txt} </Card.Text>
-                                            <Card.Text className='txt'>${item.price}.00 </Card.Text>
-                                            <Button variant="outline-dark" onClick={()=>dispatch(GetCart(item))}>Add To Cart</Button>
+                                            <Card.Text className='txt'><strong>${item.price}.00 </strong></Card.Text>
+                                            <Button className='addtocart-btn fun-cart-btn' variant="outline-dark" onClick={()=>dispatch(GetCart(item))}>Add To Cart</Button>
                                         </Card.Body>
                                     </Card>
                                 </div>

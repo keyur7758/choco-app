@@ -1,0 +1,49 @@
+
+.detail-area {
+    margin-top: 100px;
+  }
+.detail-area .detail-heading h1 {
+    color: #2D2D2D;
+    font-family: LOUIS felligri;
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  
+  .paragraph {
+    text-align: justify;
+  }
+  
+  .paragraph p {
+    color: #2D2D2D;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    padding-left: 130px;
+    margin-top: 30px;
+  }
+  
+  .paragraph-img img {
+    border-radius: 10px;
+  }
+  @media (max-width:1400px){
+    .detail-area .detail-heading h1 {
+      font-size: 60px;
+    }.paragraph p {
+      font-size: 16px;
+      line-height: 22px;
+      padding-left: 0px;
+      margin-top: 30px;
+    }
+  }
+  @media(max-width:768px){
+    .detail-area {
+      margin-top: 30px;
+    }.detail-area .detail-heading h1 {
+      font-size: 30px;
+    }
+  }

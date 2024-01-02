@@ -7,14 +7,9 @@ export default function Footer() {
                 <div class="img">
                     <img src="images/ivory_logo 1.png" alt=""/>
                 </div>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Integredients</a></li>
-                    <li><a href="#">Integredients</a></li>
-                    <li><a href="#">About me</a></li>
-                </ul>
+           
                 <div class="copy-box">
-                    <p>© 2023 the IVORY</p>
+                    <p>Copyright © IVORY 🤍 2024. All rights reserved.</p>
                 </div>
             </div>
     </>

@@ -4,12 +4,15 @@ import OwlCarousel from 'react-owl-carousel2';
 import 'react-owl-carousel2/src/owl.carousel.css'
 import 'react-owl-carousel2/src/owl.theme.default.css'
 import Product from '../products/Product';
+import Event from '../event/Event';
+import DetailPage from '../detailPage/DetailPage';
 
 
 export default function Home() {
     const [accordion1, setaccordion1] = useState(false)
     const [accordion2, setaccordion2] = useState(false)
     const [accordion3, setaccordion3] = useState(false)
+
     const options = {
         items: 5,
         nav: false,
@@ -17,7 +20,30 @@ export default function Home() {
         autoplay: true,
         autoplayTimeout: 2000,
         loop: true,
-        dots: true
+        dots: true,
+        responsive: {
+            0: {
+                items: 2
+            },
+            430: {
+                items: 3
+            },
+            600: {
+                items: 3
+            },
+            768: {
+                items: 4
+            },
+            992: {
+                items: 4
+            },
+            1000: {
+                items: 5
+            },
+            1600: {
+                items: 8
+            }
+        }
     };
     const options2 = {
         items: 5,
@@ -26,7 +52,27 @@ export default function Home() {
         autoplay: true,
         autoplayTimeout: 2000,
         loop: true,
-        dots: true
+        dots: true,
+        responsive: {
+            0: {
+                items: 2
+            },
+            430: {
+                items: 3
+            },
+            600: {
+                items: 3
+            },
+            768: {
+                items: 4
+            },
+            992: {
+                items: 4
+            },
+            1000: {
+                items: 5
+            }
+        }
     };
 
     return (
@@ -38,15 +84,6 @@ export default function Home() {
                         <p>Unique and luxurious chocolate </p>
                         <p> wedding favors that will leave a lasting</p>
                         <p>impression on your guests.</p>
-                        <div class="buttons">
-                            <div class="btn-1">
-                                <a href="#">Book Your Order</a>
-                            </div>
-                            <div class="btn-2">
-                                <a href="#">Order on Etsy</a>
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -69,7 +106,7 @@ export default function Home() {
                         </div>
                         <div class="col-md-6">
                             <div class="unique-box-2">
-                                <img src="images/unique.png" alt="" />
+                                <img className='img-fluid' src="images/unique.png" alt="" />
                             </div>
                         </div>
                     </div>
@@ -119,7 +156,7 @@ export default function Home() {
                         </div>
 
                         <h4>TIFFANY</h4>
-                        <p>PISTACHIO & HAZELNUT GIANDUJA</p>
+                        <p>HAZELNUT GIANDUJA</p>
                     </div>
                     <div class="item">
                         <div class="slide-img">
@@ -127,7 +164,51 @@ export default function Home() {
                             <img src="images/slide1.png" alt="" />
                         </div>
                         <h4>Soft Pink</h4>
-                        <p>Raspberry&Cayenne Pepper</p>
+                        <p>Raspberry</p>
+                    </div>
+                    <div class="item">
+                        <div class="slide-img">
+
+                            <img src="images/slide2.png" alt="" />
+                        </div>
+
+                        <h4>LILAC</h4>
+                        <p>Passion Fruit</p>
+                    </div>
+                    <div class="item">
+                        <div class="slide-img">
+
+                            <img src="images/slide3.png" alt="" />
+                        </div>
+
+                        <h4>Flamingo Pink</h4>
+                        <p>Baileys </p>
+                    </div>
+                    <div class="item">
+                        <div class="slide-img">
+
+                            <img src="images/slide4.png" alt="" />
+                        </div>
+
+                        <h4>LAGUNA YELLOW</h4>
+                        <p>EARL GREY</p>
+                    </div>
+                    <div class="item">
+                        <div class="slide-img">
+
+                            <img src="images/slide5.png" alt="" />
+                        </div>
+
+                        <h4>TIFFANY</h4>
+                        <p>PISTACHIO </p>
+                    </div>
+                    <div class="item">
+                        <div class="slide-img">
+
+                            <img src="images/slide1.png" alt="" />
+                        </div>
+                        <h4>Soft Pink</h4>
+                        <p>Raspberry</p>
                     </div>
                     <div class="item">
                         <div class="slide-img">
@@ -154,7 +235,7 @@ export default function Home() {
                         </div>
 
                         <h4>LAGUNA YELLOW</h4>
-                        <p>EARL GREY&LEMON</p>
+                        <p>EARL GREY</p>
                     </div>
                     <div class="item">
                         <div class="slide-img">
@@ -163,51 +244,7 @@ export default function Home() {
                         </div>
 
                         <h4>TIFFANY</h4>
-                        <p>PISTACHIO & HAZELNUT GIANDUJA</p>
-                    </div>
-                    <div class="item">
-                        <div class="slide-img">
-
-                            <img src="images/slide1.png" alt="" />
-                        </div>
-                        <h4>Soft Pink</h4>
-                        <p>Raspberry&Cayenne Pepper</p>
-                    </div>
-                    <div class="item">
-                        <div class="slide-img">
-
-                            <img src="images/slide2.png" alt="" />
-                        </div>
-
-                        <h4>LILAC</h4>
-                        <p>Passion Fruit</p>
-                    </div>
-                    <div class="item">
-                        <div class="slide-img">
-
-                            <img src="images/slide3.png" alt="" />
-                        </div>
-
-                        <h4>Flamingo Pink</h4>
-                        <p>Baileys and Caramel</p>
-                    </div>
-                    <div class="item">
-                        <div class="slide-img">
-
-                            <img src="images/slide4.png" alt="" />
-                        </div>
-
-                        <h4>LAGUNA YELLOW</h4>
-                        <p>EARL GREY&LEMON</p>
-                    </div>
-                    <div class="item">
-                        <div class="slide-img">
-
-                            <img src="images/slide5.png" alt="" />
-                        </div>
-
-                        <h4>TIFFANY</h4>
-                        <p>PISTACHIO & HAZELNUT GIANDUJA</p>
+                        <p>PISTACHIO</p>
 
                     </div>
                 </OwlCarousel>
@@ -232,82 +269,70 @@ export default function Home() {
                         <div class="item">
                             <div class="product-gallery-box">
 
-                                <img src="images/pg-1.jpg" alt="" />
+                                <img src="images/kx6.webp" alt="" />
                             </div>
                             <h4>For Sarah K</h4>
                         </div>
                         <div class="item">
                             <div class="product-gallery-box">
 
-                                <img src="images/pg-2.jpg" class="img-fluid" alt="" />
-                            </div>
-                            <h4>For Jessica P</h4>
-                        </div>
-                        <div class="item">
-                            <div class="product-gallery-box">
-
-                                <img src="images/pg-4.jpg" alt="" />
-                            </div>
-                            <h4>For Emily M.</h4>
-                        </div>
-
-                        <div class="item">
-                            <div class="product-gallery-box">
-
-                                <img src="images/pg-5.jpg" alt="" />
-                            </div>
-                            <h4>For Emily M.</h4>
-                        </div>
-
-                        <div class="item">
-                            <div class="product-gallery-box">
-
-                                <img src="images/pg-6.jpg" alt="" />
-                            </div>
-                            <h4>For Emily M.</h4>
-                        </div>
-
-                        <div class="item">
-                            <div class="product-gallery-box">
-
-                                <img src="images/pg-7.jpg" alt="" />
-                            </div>
-                            <h4>For Emily M.</h4>
-                        </div>
-                        <div class="item">
-                            <div class="product-gallery-box">
-
-                                <img src="images/pg-1.jpg" alt="" />
+                                <img src="images/kx5.jpg" alt="" />
                             </div>
                             <h4>For Sarah K</h4>
                         </div>
                         <div class="item">
                             <div class="product-gallery-box">
 
-                                <img src="images/pg-2.jpg" class="img-fluid" alt="" />
+                                <img src="images/kx8.jpg" alt="" />
                             </div>
-                            <h4>For Jessica P</h4>
+                            <h4>For Sarah K</h4>
+                        </div>
+                        <div class="item">
+                            <div class="product-gallery-box">
+                                <img src="images/kx10.jpg" alt="" />
+                            </div>
+                            <h4>For Sarah K</h4>
                         </div>
                         <div class="item">
                             <div class="product-gallery-box">
 
-                                <img src="images/pg-4.jpg" alt="" />
+                                <img src="images/kx7.jpg" alt="" />
                             </div>
-                            <h4>For Emily M.</h4>
+                            <h4>For Sarah K</h4>
                         </div>
                         <div class="item">
                             <div class="product-gallery-box">
 
-                                <img src="images/pg-7.jpg" alt="" />
+                                <img src="images/kx6.webp" alt="" />
                             </div>
-                            <h4>For Emily M.</h4>
+                            <h4>For Sarah K</h4>
                         </div>
                         <div class="item">
                             <div class="product-gallery-box">
 
-                                <img src="images/pg-6.jpg" alt="" />
+                                <img src="images/kx5.jpg" alt="" />
                             </div>
-                            <h4>For Emily M.</h4>
+                            <h4>For Sarah K</h4>
+                        </div>
+                        <div class="item">
+                            <div class="product-gallery-box">
+
+                                <img src="images/kx8.jpg" alt="" />
+                            </div>
+                            <h4>For Sarah K</h4>
+                        </div>
+                        <div class="item">
+                            <div class="product-gallery-box">
+                                <img src="images/kx10.jpg" alt="" />
+                            </div>
+                            <h4>For Sarah K</h4>
+                        </div>
+                        <div class="item">
+                            <div class="product-gallery-box">
+
+                                <img src="images/kx7.jpg" alt="" />
+                            </div>
+                            <h4>For Sarah K</h4>
                         </div>
                     </OwlCarousel>
                 </div>
@@ -373,53 +398,8 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-            <section class="detail-area">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8">
-                            <div class="detail-heading">
-                                <h1>Meet your chocolatier</h1>
-                            </div>
-                            <div class="paragraph">
-                                <p>Hi, I'm Hanna, a master chocolatier with a passion for creating exquisite chocolate
-                                    creations. With over 15 years of experience, I have established a reputation for crafting
-                                    unique and memorable chocolate flavors that push the boundaries of traditional
-                                    confectionery.</p>
-                                <p>
-                                    For me, the process of making chocolate is an art form. From hand-picking the finest cocoa
-                                    beans to adding the perfect finishing touches to each chocolate treat, I pour my heart and
-                                    soul into every creation. Nothing brings me more joy than seeing the smiles on my customers'
-                                    faces when they take that first bite of my chocolate.
-                                </p>
-                                <p>
-                                    My commitment to quality and dedication to my craft are the driving forces behind everything
-                                    I do. I believe that every bite of chocolate should be an indulgent experience, and I'm
-                                    constantly pushing myself to create new and exciting flavors that will delight chocolate
-                                    lovers around the world.
-                                    Thank you for taking the time to learn a little bit about me and my passion for chocolate. I
-                                    can't wait to share my creations with you!
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="paragraph-img">
-                                <img src="images/pg1.png" alt="" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="event-area">
-                <div class="container">
-                    <div class="event">
-                        <div class="event-box">
-                            <h1>Make Your <br />Special Day <br />Even Sweeter</h1>
-
-                        </div>
-                    </div>
-                </div>
-            </section>
-
+            <DetailPage/>
+            <Event/>
         </>
     )
 }
