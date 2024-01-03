@@ -22,7 +22,7 @@ export default function Cart() {
                     showCart&&
              
                 <div className='cart-area'>
-                    <div className='row g-4 row-cols-xl-3'>
+                    <div className='row g-4  row-cols-xl-3 row-cols-md-3 row-cols-sm-2 row-cols-2'>
                         {
                             cart?.map((item) => (
                                 <div className='col'>
